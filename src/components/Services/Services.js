@@ -3,14 +3,14 @@ import "./Services.css";
 
 const Services = () => {
   return (
-    <div>
+    <div className='mb-5'>
       <h2 className="text-center mt-5">Our Best Services</h2>
       <p className="text-center mb-5">
         Lorem ipsum dolor ipsum dolor ipsum dolor sit amet consectetur,
         adipisicing elit.
       </p>
       <div className="card-component">
-        <div>
+        <div className='card-shadow py-2 px-2 rounded-3'>
           <img
             className="w-100"
             src="https://www.indiabhutantours.in/admin/include/upload/images/gallery5cf0cf9ac75fbAndaman_Honeymoon.jpg"
@@ -24,12 +24,12 @@ const Services = () => {
               Dolorem
             </p>
             <h3>Price $150</h3>
-            <button className="w-100 bg-warning mt-2 border-0 py-1 fw-bold">
+            <button className="w-100 bg-warning mt-2 border-0 py-1 fw-bold rounded-3 btn-bg">
               Check out
             </button>
           </div>
         </div>
-        <div>
+        <div className='card-shadow py-2 px-2 rounded-3'>
           <img
             className="w-100"
             src="https://www.indiabhutantours.in/admin/include/upload/images/gallery5cf0cf9ac75fbAndaman_Honeymoon.jpg"
@@ -43,12 +43,12 @@ const Services = () => {
               Dolorem
             </p>
             <h3>Price $150</h3>
-            <button className="w-100 bg-warning mt-2 border-0 py-1 fw-bold">
+            <button className="w-100 bg-warning mt-2 border-0 py-1 fw-bold rounded-3 btn-bg">
               Check out
             </button>
           </div>
         </div>
-        <div>
+        <div className='card-shadow py-2 px-2 rounded-3'>
           <img
             className="w-100"
             src="https://www.indiabhutantours.in/admin/include/upload/images/gallery5cf0cf9ac75fbAndaman_Honeymoon.jpg"
@@ -62,7 +62,7 @@ const Services = () => {
               Dolorem
             </p>
             <h3>Price $150</h3>
-            <button className="w-100 bg-warning mt-2 border-0 py-1 fw-bold">
+            <button className="w-100 bg-warning mt-2 border-0 py-1 fw-bold rounded-3 btn-bg">
               Check out
             </button>
           </div>

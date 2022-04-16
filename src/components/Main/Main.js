@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import NavPage from "../NavPage/NavPage";
 import Services from "../Services/Services";
@@ -9,6 +10,7 @@ const Main = () => {
       <NavPage />
       <Header />
       <Services />
+      <Footer />
     </div>
   );
 };

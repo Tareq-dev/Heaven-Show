@@ -4,3 +4,10 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 25px;
 }
+.card-shadow:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-bg:hover {
+  background-color: skyblue!important;
+}
