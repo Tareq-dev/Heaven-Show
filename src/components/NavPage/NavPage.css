@@ -1,0 +1,17 @@
+.link {
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 35px;
+  transition: color ease-in-out 300ms;
+}
+.link:hover {
+  color: red;
+}
+.active-link {
+  text-decoration: none;
+  margin-left: 35px;
+  font-size: 20px;
+  transition: color ease-in-out 300ms;
+  border-bottom: 2px solid red;
+  color: red;
+}
