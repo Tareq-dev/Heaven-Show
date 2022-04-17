@@ -7,4 +7,13 @@
   width: 100%;
   height: 600px;
 }
-//https://ak.picdn.net/shutterstock/videos/21337111/thumb/1.jpg
+
+.signup-blur{
+  /* From https://css.glass */
+background: rgba(112, 248, 254, 0.23);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.8px);
+-webkit-backdrop-filter: blur(1.8px);
+border: 1px solid rgba(112, 248, 254, 0.57);
+}

@@ -1,0 +1,11 @@
+.my-img {
+  border: 1px solid gray;
+  border-radius: 25px;
+}
+@media screen and (max-width: 515px) {
+  .my-img {
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 25px;
+  }
+}

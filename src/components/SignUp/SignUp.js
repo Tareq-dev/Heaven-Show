@@ -5,6 +5,7 @@ import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../firebase.init";
 import { Link, useNavigate } from "react-router-dom";
 import Loading from "../Loading/Loading";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -18,7 +19,7 @@ const SignUp = () => {
     return <Loading />;
   }
 
-  const signIn = () => {
+  const Register = () => {
     createUserWithEmailAndPassword(email, password, confirmPassword);
     navigate("/");
   };
@@ -26,52 +27,59 @@ const SignUp = () => {
     <div>
       <NavPage />
       <div className="signup">
-        <div className="d-flex justify-content-center py-5">
-          <div>
-            <h2 className="text-center">Sign Up</h2>
-            <form className="">
-              <input
-                className="mt-2 px-2 py-1 border"
-                type="text"
-                placeholder="Name"
-                required
-              />
-              <br />
-              <input
-                onChange={(e) => setEmail(e.target.value)}
-                className="mt-2 px-2 py-1 border"
-                type="email"
-                placeholder="Email"
-                required
-              />
-              <br />
-              <input
-                onChange={(e) => setPassword(e.target.value)}
-                className="mt-2 px-2 py-1 border"
-                type="password"
-                placeholder="Password"
-                required
-              />
-              <br />
-              <input
-                onChange={(e) => setConfirmPassword(e.target.value)}
-                className="mt-2 px-2 py-1 border"
-                type="password"
-                placeholder="Confirm Password"
-                required
-              />
-              <br />
-              <p>{error.message}</p>
-              <button onClick={signIn} className="mt-2 w-100 bg-info">
-                Register
-              </button>
-              <Link
-                to="/login"
-                className="text-danger d-block text-decoration-none"
-              >
-                Allready have an account?
-              </Link>
-            </form>
+        <div>
+          <div className="d-flex justify-content-center py-5">
+            <div className="signup-blur px-5 py-5">
+              <h2 className="text-center">Sign Up</h2>
+              <form >
+                <input
+                  className="mt-2 px-2 py-1 border"
+                  type="text"
+                  placeholder="Name"
+                  required
+                />
+                <br />
+                <input
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="mt-2 px-2 py-1 border"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+                <br />
+                <input
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="mt-2 px-2 py-1 border"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+                <br />
+                <input
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  className="mt-2 px-2 py-1 border"
+                  type="password"
+                  placeholder="Confirm Password"
+                  required
+                />
+                <br />
+                <p>{error.message}</p>
+                <div className='d-flex justify-content-center'>
+                <button onClick={Register} className="mt-2 bg-info border-0 rounded-3 py-1 px-3 mb-2">
+                  Register
+                </button>
+                </div>
+                <Link
+                  to="/login"
+                  className="text-danger fw-bold d-block text-decoration-none mb-3"
+                >
+                  Already have an account?
+                </Link>
+                <div className="d-flex justify-content-center">
+                  <SocialLogin />
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

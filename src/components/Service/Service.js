@@ -10,7 +10,7 @@ const Service = ({ service }) => {
   return (
     <div>
       <div className="card-shadow py-2 px-2 rounded-3">
-        <img className="w-100" src={img} alt="" />
+        <img style={{borderRadius:'25px'}} className="w-100" src={img} alt="" />
         <div className="px-2">
           <h2>{name}</h2>
           <p>{description}</p>

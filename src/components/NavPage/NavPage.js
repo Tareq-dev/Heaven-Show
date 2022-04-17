@@ -11,10 +11,12 @@ const NavPage = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand as={Link} to="/">Heaven Show</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">
+          Heaven Show
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto mx-5 px-5">
+          <Nav className="ms-auto">
             <NavLink
               to="/blog"
               className={({ isActive }) => (isActive ? "active-link" : "link")}
@@ -27,7 +29,7 @@ const NavPage = () => {
             >
               About
             </NavLink>
-            {user?.uid ? (
+            {user ? (
               <button className="border mx-5" onClick={() => signOut(auth)}>
                 Sign Out
               </button>

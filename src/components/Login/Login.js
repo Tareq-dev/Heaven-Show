@@ -15,7 +15,7 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const from = location.state?.from?.pathname || "/";
+  const from = location?.state?.from?.pathname || "/";
 
   if (loading) {
     return <Loading />;
@@ -31,7 +31,7 @@ const Login = () => {
         <NavPage />
         <div className="signup">
           <div className="d-flex justify-content-center py-5">
-            <div>
+            <div className="signup-blur px-5 py-5">
               <h2 className="text-center">Log In</h2>
               <form className="">
                 <br />
@@ -55,9 +55,9 @@ const Login = () => {
                 </button>
                 <Link
                   to="/signup"
-                  className="text-danger d-block text-decoration-none"
+                  className="text-danger fw-bold d-block text-decoration-none mt-2 mb-3"
                 >
-                  Allready have an account?
+                  Don't have an account?
                 </Link>
               </form>
             </div>

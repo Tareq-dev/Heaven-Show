@@ -1,44 +1,23 @@
 [
      {
          "id": 1,
-         "name": "ENGINE ",
-         "price": "300",
-         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+         "name": "Nature guide",
+         "price": "380",
+         "description": "Nature guides usually guide tourists through outdoor areas of interest. Typically less extreme than adventure guides, nature guides might lead walking or hiking tours through wilderness areas focusing on subjects like geology, ornithology and ecology.",
          "img": "https://www.indiabhutantours.in/admin/include/upload/images/gallery5cf0cf9ac75fbAndaman_Honeymoon.jpg"
      },
      {
          "id": 2,
-         "name": "WHEEL ",
-         "price": "100",
-         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+         "name": "Adventure guide",
+         "price": "450",
+         "description": "Adventure guides lead guests on excursions that may be otherwise unavailable to them. In addition to knowing relevant facts and navigation information, adventure guides often posses the practical knowledge, skills and equipment patrons need to enjoy an activity or sport. Some common types of adventure guides are: River guides, Climbing guides, Hiking guides,Trail riding guides etc.",
          "img": "https://www.indiabhutantours.in/admin/include/upload/images/gallery5cf0cf9ac75fbAndaman_Honeymoon.jpg"
      },
      {
          "id": 3,
-         "name": "OIL CHANGING",
-         "price": "150",
-         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-         "img": "https://www.indiabhutantours.in/admin/include/upload/images/gallery5cf0cf9ac75fbAndaman_Honeymoon.jpg"
-     },
-     {
-         "id": 4,
-         "name": "BRAKE REPARING",
-         "price": "180",
-         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-         "img": "https://www.indiabhutantours.in/admin/include/upload/images/gallery5cf0cf9ac75fbAndaman_Honeymoon.jpg"
-     },
-     {
-         "id": 5,
-         "name": "WASH AND GLASSING",
-         "price": "100",
-         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-         "img": "https://www.indiabhutantours.in/admin/include/upload/images/gallery5cf0cf9ac75fbAndaman_Honeymoon.jpg"
-     },
-     {
-         "id": 6,
-         "name": "COMPLETE ANALYSIS",
+         "name": "Museum guide",
          "price": "300",
-         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+         "description": "Museum guides work to offer insightful information to museum guests by giving them background knowledge on exhibits, works of art and artifacts. Museums may employ museum guides to chaperone guests and to make the museum experience.",
          "img": "https://www.indiabhutantours.in/admin/include/upload/images/gallery5cf0cf9ac75fbAndaman_Honeymoon.jpg"
      }
  ]
