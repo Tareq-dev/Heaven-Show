@@ -11,12 +11,18 @@ const NavPage = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand as={Link} to="/">
-          Heaven Show
+        <Navbar.Brand className="fw-bold" as={Link} to="/">
+          <span className="text-primary">Heaven</span> Show
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
+          <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active-link" : "link")}
+            >
+              Home
+            </NavLink>
             <NavLink
               to="/blog"
               className={({ isActive }) => (isActive ? "active-link" : "link")}
@@ -30,7 +36,7 @@ const NavPage = () => {
               About
             </NavLink>
             {user ? (
-              <button className="border mx-5" onClick={() => signOut(auth)}>
+              <button className="border mx-5 rounded-3 bg-info fw-bold" onClick={() => signOut(auth)}>
                 Sign Out
               </button>
             ) : (

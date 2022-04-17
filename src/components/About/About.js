@@ -8,21 +8,20 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import "./About.css";
-import { Col, Row } from "react-bootstrap";
 
 const About = () => {
   return (
     <div style={{ height: "700px" }} className="bg-info">
       <NavPage />
-      <Row className="about bg-white mt-5 px-5 mx-5">
-        <Col className="p-5">
+      <div className="about bg-white mt-5 px-2 mx-2">
+        <div className="px-3 py-3">
           <img
             className="my-img w-100"
             src="https://i.ibb.co/mzHZDNL/trk1.png"
             alt=""
           />
-        </Col>
-        <Col className="py-5 mt-2">
+        </div>
+        <div className="py-2 mt-5 pt-5">
           <h1>ABOUT ME</h1>
           <h6 className="text-danger">Front End Developer</h6>
           <p className="fs-6">
@@ -33,19 +32,30 @@ const About = () => {
             order to achieve corporate objectives.
           </p>
           <div className="fs-2">
-            <FontAwesomeIcon className="mx-2 text-primary" icon={faFacebook} />
-            <FontAwesomeIcon className="mx-2" icon={faGithub} />
-            <FontAwesomeIcon
-              className="mx-2 text-danger"
-              icon={faStackOverflow}
-            />
-            <FontAwesomeIcon
-              className="mx-2 text-primary"
-              icon={faLinkedinIn}
-            />
+            <a href="/f">
+              <FontAwesomeIcon
+                className="mx-2 text-primary"
+                icon={faFacebook}
+              />
+            </a>
+            <a href="dd">
+              <FontAwesomeIcon className="mx-2" icon={faGithub} />
+            </a>
+            <a href="/ll">
+              <FontAwesomeIcon
+                className="mx-2 text-danger"
+                icon={faStackOverflow}
+              />
+            </a>
+            <a href="/ld">
+              <FontAwesomeIcon
+                className="mx-2 text-primary"
+                icon={faLinkedinIn}
+              />
+            </a>
           </div>
-        </Col>
-      </Row>
+        </div>
+      </div>
     </div>
   );
 };
