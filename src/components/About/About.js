@@ -32,22 +32,22 @@ const About = () => {
             order to achieve corporate objectives.
           </p>
           <div className="fs-2">
-            <a href="/f">
+            <a href="https://www.facebook.com/tareq.servant">
               <FontAwesomeIcon
                 className="mx-2 text-primary"
                 icon={faFacebook}
               />
             </a>
-            <a href="dd">
+            <a href="https://github.com/Tareq-dev">
               <FontAwesomeIcon className="mx-2" icon={faGithub} />
             </a>
-            <a href="/ll">
+            <a href="https://stackoverflow.com/users/17347609/tarequl-islam">
               <FontAwesomeIcon
                 className="mx-2 text-danger"
                 icon={faStackOverflow}
               />
             </a>
-            <a href="/ld">
+            <a href="https://www.linkedin.com/in/tareq-dev/">
               <FontAwesomeIcon
                 className="mx-2 text-primary"
                 icon={faLinkedinIn}
