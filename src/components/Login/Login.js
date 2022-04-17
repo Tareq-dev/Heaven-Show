@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import NavPage from "../NavPage/NavPage";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../firebase.init";
 import Loading from "../Loading/Loading";
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -11,6 +13,9 @@ const Login = () => {
   const [signInWithEmailAndPassword, loading, error] =
     useSignInWithEmailAndPassword(auth);
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const from = location.state?.from?.pathname || "/";
 
   if (loading) {
     return <Loading />;
@@ -18,7 +23,7 @@ const Login = () => {
 
   const login = () => {
     signInWithEmailAndPassword(email, password);
-    navigate("/");
+    navigate(from, { replace: true });
   };
   return (
     <div>

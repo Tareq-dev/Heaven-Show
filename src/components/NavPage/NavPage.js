@@ -21,6 +21,12 @@ const NavPage = () => {
             >
               Blog
             </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? "active-link" : "link")}
+            >
+              About
+            </NavLink>
             {user?.uid ? (
               <button className="border mx-5" onClick={() => signOut(auth)}>
                 Sign Out
