@@ -5,6 +5,8 @@ import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../firebase.init";
 import { Link, useNavigate } from "react-router-dom";
 import Loading from "../Loading/Loading";
+import SocialLogin from "./../SocialLogin/SocialLogin";
+import Footer from "../Footer/Footer";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -95,11 +97,13 @@ const SignUp = () => {
                 >
                   Already have an account?
                 </Link>
+                <SocialLogin />
               </form>
             </div>
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

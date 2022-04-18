@@ -5,6 +5,7 @@ import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../firebase.init";
 import Loading from "../Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
+import Footer from "../Footer/Footer";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -29,7 +30,6 @@ const Login = () => {
   };
 
   return (
-    <div>
       <div>
         <NavPage />
         <div className="signup">
@@ -82,8 +82,8 @@ const Login = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
-    </div>
   );
 };
 

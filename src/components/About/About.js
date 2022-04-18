@@ -8,6 +8,7 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import "./About.css";
+import Footer from "../Footer/Footer";
 
 const About = () => {
   return (
@@ -59,6 +60,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

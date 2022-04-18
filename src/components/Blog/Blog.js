@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 import NavPage from "../NavPage/NavPage";
 
 const Blog = () => {
@@ -55,6 +56,7 @@ const Blog = () => {
           <li> Cloud Messaging.</li>
         </p>
       </div>
+      <Footer />
     </div>
   );
 };

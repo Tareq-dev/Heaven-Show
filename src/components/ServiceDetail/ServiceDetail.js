@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Button, Card } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router-dom";
 import { MyService } from "../../App";
+import Footer from "../Footer/Footer";
 import NavPage from "../NavPage/NavPage";
 
 const ServiceDetail = () => {
@@ -18,7 +19,7 @@ const ServiceDetail = () => {
     <div>
       <NavPage />
       <Card className="text-center m-5">
-        <Card.Header></Card.Header>
+        <Card.Header>{id}</Card.Header>
         <Card.Body>
           <img className="w-50" src={serviceInfo?.img} alt="" />
           <Card.Title>{serviceInfo?.name}</Card.Title>
@@ -26,11 +27,12 @@ const ServiceDetail = () => {
             {serviceInfo.description}
           </Card.Text>
           <h4>${serviceInfo?.price}</h4>
-          <Button onClick={proccedCheckOut} variant="primary">
+          <Button onClick={proccedCheckOut} className="border-0 bg-info text-dark fw-bold">
             Checkout
           </Button>
         </Card.Body>
       </Card>
+      <Footer />
     </div>
   );
 };
