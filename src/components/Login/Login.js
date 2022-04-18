@@ -27,6 +27,7 @@ const Login = () => {
     event.preventDefault();
     signInWithEmailAndPassword(email, password);
   };
+
   return (
     <div>
       <div>
@@ -66,6 +67,15 @@ const Login = () => {
                   >
                     Don't have an account?
                   </Link>
+                  <p className="text-danger fw-bold d-block mb-3">
+                    Forget Password ?
+                    <Link
+                      to="/reset-password"
+                      className="mx-2 text-decoration-none mb-3"
+                    >
+                      Reset Password
+                    </Link>
+                  </p>
                   <SocialLogin />
                 </form>
               </div>

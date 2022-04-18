@@ -9,8 +9,8 @@ const Header = () => {
           Best Place Waiting For Your Best Tour Guide
         </h1>
         <p className="text-white">
-          A tour guide's duties depend on their location and employer. If they
-          are self-employed, they will usually give tours of publicly accessible
+          My duties depend on your location and employer. If you
+          are self-employed, you will usually give tours of publicly accessible
           travel destinations like national parks or nature attractions.
         </p>
       </div>

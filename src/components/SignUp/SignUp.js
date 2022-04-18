@@ -13,6 +13,7 @@ const SignUp = () => {
   const [error, setError] = useState("");
   const [createUserWithEmailAndPassword, user, loading] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
   const navigate = useNavigate();
 
   if (loading) {
@@ -32,7 +33,6 @@ const SignUp = () => {
     setPassword("");
     setConfirmPassword("");
 
-
     if (user) {
       navigate("/");
     }
@@ -40,6 +40,7 @@ const SignUp = () => {
       navigate("/");
     });
   };
+
   return (
     <div>
       <NavPage />
@@ -94,7 +95,6 @@ const SignUp = () => {
                 >
                   Already have an account?
                 </Link>
-                <div className="d-flex justify-content-center"></div>
               </form>
             </div>
           </div>

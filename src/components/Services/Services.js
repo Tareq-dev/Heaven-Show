@@ -12,11 +12,13 @@ const Services = () => {
   }, [setService]);
   return (
     <div className="mb-5 service-content">
-      <h2 className="text-center mt-2">Our Best Services</h2>
-      <p className="text-center mb-3">
-        Tour guide services engaged in as part of a gainful business activity
+      <h2 className="text-center mt-3">Our Best Services</h2>
+      <div className="d-flex justify-content-center">
+      <p className="text-center mb-3 w-50 fs-5">
+        I am servicing engaged in as part of a gainful business activity
         cover the detailed on-site presentation and introduction of attractions.
       </p>
+      </div>
       <div className="card-component">
         {service.slice(0, 3).map((service) => (
           <Service key={service.id} service={service} />
