@@ -10,7 +10,7 @@
          "id": 2,
          "name": "Adventure guide",
          "price": "450",
-         "description": "Adventure guides lead guests on excursions that may be otherwise unavailable to them. In addition to knowing relevant facts and navigation information, adventure guides often posses the practical knowledge, skills and equipment patrons need to enjoy an activity or sport. Some common types of adventure guides are: River guides, Climbing guides, Hiking guides,Trail riding guides etc.",
+         "description": "Adventure guides lead guests on excursions that may be otherwise unavailable to them. In addition to knowing relevant facts and navigation information, adventure guides often posses the practical knowledge and equipment patrons need to enjoy.",
          "img": "https://www.spanishadventuretours.com/wp-content/uploads/2020/08/hm-ftr-opt-1.jpg"
      },
      {
@@ -19,5 +19,26 @@
          "price": "300",
          "description": "Museum guides work to offer insightful information to museum guests by giving them background knowledge on exhibits, works of art and artifacts. Museums may employ museum guides to chaperone guests and to make the museum experience.",
          "img": "https://visitmeteora.travel/wp-content/uploads/2021/10/acropolis-museum-6.jpg"
+     },
+     {
+         "id": 4,
+         "name": "Historical guide",
+         "price": "320",
+         "description": "A historical guide leads tourists around historical landmarks and points of interest like ruins, temples, battlefields and other sites of historical importance. On these types of tours, patrons often want to learn more about the history of a particular area.",
+         "img": "https://images.squarespace-cdn.com/content/v1/5beb0a44f2e6b1113f9519d9/1613682971012-S1LNCPVTA0KLO2PDQ133/Characteristics+of+heritage+tourism.jpg"
+     },
+     {
+         "id": 5,
+         "name": "River guides",
+         "price": "313",
+         "description": "River guides, or raft guides, lead groups through river rapids and other obstacles in the water. Trips can last from a few hours to multiple weeks, and guides are often responsible for outfitting guests.",
+         "img": "https://www.failteireland.ie/getmedia/d09c4e76-6250-430f-a90e-dbaca9df3218/450_ShannonMasterplan_Canoe.aspx?width=400&height=276&ext=.jpg"
+     },
+     {
+         "id": 6,
+         "name": "Hiking guides",
+         "price": "300",
+         "description": "Hiking guides may lead hikers or backpackers on short day trips or on longer mountaineering expeditions. For some hikes, peaks are inaccessible without a professional chaperone or guide. ",
+         "img": "https://img.freepik.com/free-photo/attractive-smiling-woman-tourist-hiking-mountain-trail-walking-grassy-hill-wearing-backpack-using-trekking-sticks-enjoying-summer-sunny-day-mountains-tourism-concept_10069-3720.jpg?w=2000"
      }
  ]

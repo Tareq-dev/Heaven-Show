@@ -5,9 +5,9 @@ const Review = () => {
     <div style={{backgroundColor: '#a7f2fc'}} className="pb-5">
       <h2 className="text-center pt-4 mb-5">See Honest Reviews</h2>
       <div className="p-2 m-3">
-        <div className="row d-flex justify-content-between">
+        <div className="row d-flex justify-content-between mx-md-1">
           <div className="col-md-4 border p-3 bg-white mt-2">
-            <span className="fs-1 fw-bold">❝</span>
+            <span className="fs-1 fw-bold text-primary">❝</span>
             <p>
               I found Raami Travel through a web search for tour guides in Riga
               and contacted several local guides regarding a full day (8 – 9
@@ -29,7 +29,7 @@ const Review = () => {
             </div>
           </div>
           <div className="col-md-4 border p-3 bg-white mt-2">
-            <span className="fs-1 fw-bold">❝</span>
+            <span className="fs-1 fw-bold text-primary">❝</span>
             <p>
               Excellent private tour. Our guide was incredibly knowledgable and
               gave us a fantastic day in Riga. We learnt about history, art,
@@ -52,7 +52,7 @@ const Review = () => {
             </div>
           </div>
           <div className="col-md-4 border p-3 p-3 bg-white mt-2">
-            <span className="fs-1 fw-bold">❝</span>
+            <span className="fs-1 fw-bold text-primary">❝</span>
             <p>
               A fantastic tour. This tour won’t disappoint! We had a fantastic
               tour guide who was very knowledgeable. He gave us lots of

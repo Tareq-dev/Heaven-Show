@@ -60,13 +60,13 @@
 
 @media screen and (max-width: 450px) {
   .form-container {
-    width: 400px;
+    width: 350px;
   }
   .input-group input {
-    width: 350px;
+    width: 300px;
     margin: 0 auto;
   }
   .form-submit {
-    width: 350px;
+    width: 300px;
   }
 }

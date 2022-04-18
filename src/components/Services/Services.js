@@ -14,13 +14,13 @@ const Services = () => {
     <div className="mb-5 service-content">
       <h2 className="text-center mt-3">Our Best Services</h2>
       <div className="d-flex justify-content-center">
-      <p className="text-center mb-3 w-50 fs-5">
+      <p className="text-center mb-3 fs-6 service-para">
         I am servicing engaged in as part of a gainful business activity
-        cover the detailed on-site presentation and introduction of attractions.
+        cover the detailed on-site presentation.
       </p>
       </div>
       <div className="card-component">
-        {service.slice(0, 3).map((service) => (
+        {service.map((service) => (
           <Service key={service.id} service={service} />
         ))}
       </div>
