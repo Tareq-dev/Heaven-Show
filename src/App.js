@@ -6,6 +6,7 @@ import Blog from "./components/Blog/Blog";
 import Checkout from "./components/Checkout/Checkout";
 import Login from "./components/Login/Login";
 import Main from "./components/Main/Main";
+import NotFound from "./components/NotFound/NotFound";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
 import ServiceDetail from "./components/ServiceDetail/ServiceDetail";
 import SignUp from "./components/SignUp/SignUp";
@@ -31,6 +32,7 @@ function App() {
               </RequireAuth>
             }
           ></Route>
+          <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </MyService.Provider>
     </div>

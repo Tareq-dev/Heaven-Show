@@ -10,11 +10,8 @@ const ServiceDetail = () => {
   const serviceInfo = service.find((s) => s.id == id);
   const navigate = useNavigate();
 
-
-
   const proccedCheckOut = () => {
-     navigate('/checkout')
-
+    navigate("/checkout");
   };
 
   return (
@@ -24,11 +21,11 @@ const ServiceDetail = () => {
         <Card.Header></Card.Header>
         <Card.Body>
           <img className="w-50" src={serviceInfo?.img} alt="" />
-          <Card.Title>{serviceInfo.name}</Card.Title>
+          <Card.Title>{serviceInfo?.name}</Card.Title>
           <Card.Text className="w-75 mx-auto">
             {serviceInfo.description}
           </Card.Text>
-          <h4>${serviceInfo.price}</h4>
+          <h4>${serviceInfo?.price}</h4>
           <Button onClick={proccedCheckOut} variant="primary">
             Checkout
           </Button>
