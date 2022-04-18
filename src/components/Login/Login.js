@@ -52,9 +52,11 @@ const Login = () => {
                   />
                   <br />
                   <p>{error?"" : error.message}</p>
-                  <button onClick={login} className="mt-2 w-100 bg-info">
-                    Login
-                  </button>
+                 <div className="d-flex justify-content-center">
+                 <button onClick={login} className="mt-2 px-3 border-0 fw-bold rounded bg-info">
+                 Login
+               </button>
+                 </div>
                   <Link
                     to="/signup"
                     className="text-danger fw-bold d-block text-decoration-none mt-2 mb-3"

@@ -5,8 +5,6 @@ import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../firebase.init";
 import { Link, useNavigate } from "react-router-dom";
 import Loading from "../Loading/Loading";
-import SocialLogin from "../SocialLogin/SocialLogin";
-
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -79,10 +77,7 @@ const SignUp = () => {
                 >
                   Already have an account?
                 </Link>
-                <div className="d-flex justify-content-center">
-                  <SocialLogin />
-             
-                </div>
+                <div className="d-flex justify-content-center"></div>
               </form>
             </div>
           </div>
