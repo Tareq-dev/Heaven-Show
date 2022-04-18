@@ -36,7 +36,7 @@ const NavPage = () => {
               About
             </NavLink>
             {user ? (
-              <button className="border mx-5 rounded-3 bg-info fw-bold" onClick={() => signOut(auth)}>
+              <button className="border mx-5 mt-2 rounded-3 bg-info fw-bold" onClick={() => signOut(auth)}>
                 Sign Out
               </button>
             ) : (

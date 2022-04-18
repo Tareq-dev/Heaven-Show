@@ -16,13 +16,16 @@ const Checkout = () => {
 
   const handleCheckout = (event) => {
     event.preventDefault();
-    const checkout = { name, email, phone, address };
-    toast("Thanks For Checkingout!");
+    if (!name && !email && !phone && !address) {
+      toast("Please enter all the required fields!");
+    } else {
+      toast("Thanks For Checkingout!");
+    }
   };
   return (
     <div>
       <NavPage />
-      <div className=" checkout">
+      <div className="checkout">
         <div className="d-flex justify-content-center">
           <div className="form-container py-2 mt-5 pt-5">
             <div>

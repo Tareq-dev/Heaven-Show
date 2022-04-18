@@ -11,17 +11,18 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div style={{ height: "700px" }} className="bg-info">
+    <div style={{ height: "750px" }} className="bg-info">
       <NavPage />
-      <div className="about bg-white mt-5 px-2 mx-2">
-        <div className="px-3 py-3">
+      <div className="row bg-white mt-5 px-2 mx-2 rounded-3 mb-3">
+        <div className="px-3 py-3 col-md-6">
           <img
             className="my-img w-100"
             src="https://i.ibb.co/mzHZDNL/trk1.png"
             alt=""
           />
         </div>
-        <div className="py-2 mt-5 pt-5">
+        <div className="py-2 mt-1 pt-1 col-md-6 d-flex justify-content-center align-items-center">
+          <div>
           <h1>ABOUT ME</h1>
           <h6 className="text-danger">Front End Developer</h6>
           <p className="fs-6">
@@ -53,6 +54,7 @@ const About = () => {
                 icon={faLinkedinIn}
               />
             </a>
+          </div>
           </div>
         </div>
       </div>

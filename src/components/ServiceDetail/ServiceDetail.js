@@ -10,6 +10,8 @@ const ServiceDetail = () => {
   const serviceInfo = service.find((s) => s.id == id);
   const navigate = useNavigate();
 
+
+
   const proccedCheckOut = () => {
      navigate('/checkout')
 

@@ -2,17 +2,10 @@
   border: 1px solid gray;
   border-radius: 25px;
 }
-.about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
 @media screen and (max-width: 515px) {
   .my-img {
     width: 300px;
     border: 1px solid gray;
     border-radius: 25px;
-  }
-  .about {
-    grid-template-columns: (1fr);
   }
 }
