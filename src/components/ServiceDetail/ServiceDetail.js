@@ -1,15 +1,28 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Button, Card } from "react-bootstrap";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate, useParams } from "react-router-dom";
 import { MyService } from "../../App";
+import auth from "../firebase.init";
+import Loading from "../Loading/Loading";
 import NavPage from "../NavPage/NavPage";
 
 const ServiceDetail = () => {
   const { id } = useParams();
-  const [service] = useContext(MyService);
+  const [service, setService] = useState([]);
+  useEffect(() => {
+    fetch(process.env.PUBLIC_URL+"/service.json")
+      .then((res) => res.json())
+      .then((data) => setService(data));
+  }, [service]);
+
   const serviceInfo = service.find((s) => s.id == id);
   const navigate = useNavigate();
+  const [user, loading] = useAuthState(auth);
 
+  if (loading) {
+    return <Loading />;
+  }
   const proccedCheckOut = () => {
     navigate("/checkout");
   };
@@ -18,7 +31,7 @@ const ServiceDetail = () => {
     <div>
       <NavPage />
       <Card className="text-center m-5">
-        <Card.Header></Card.Header>
+        <Card.Header>{serviceInfo?.length}</Card.Header>
         <Card.Body>
           <img className="w-50" src={serviceInfo?.img} alt="" />
           <Card.Title>{serviceInfo?.name}</Card.Title>

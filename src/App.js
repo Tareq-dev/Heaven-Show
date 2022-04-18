@@ -20,18 +20,19 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/blog" element={<Blog />}></Route>
-          <Route path="/services/:id" element={<ServiceDetail />}></Route>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/signup" element={<SignUp />}></Route>
-          <Route path="/about" element={<About />}></Route>
           <Route
-            path="/checkout"
+            path="/services/:id"
             element={
               <RequireAuth>
-                <Checkout />
+                <ServiceDetail />
               </RequireAuth>
             }
           ></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/signup" element={<SignUp />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/checkout" element={<Checkout />}></Route>
+
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </MyService.Provider>

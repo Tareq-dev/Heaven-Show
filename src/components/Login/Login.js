@@ -6,11 +6,10 @@ import auth from "../firebase.init";
 import Loading from "../Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
 
-
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [signInWithEmailAndPassword, loading, error] =
+  const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   const navigate = useNavigate();
   const location = useLocation();
@@ -20,11 +19,13 @@ const Login = () => {
   if (loading) {
     return <Loading />;
   }
-
-  const login = () => {
-    signInWithEmailAndPassword(email, password);
-   
+  if (user) {
     navigate(from, { replace: true });
+  }
+
+  const login = (event) => {
+    event.preventDefault();
+    signInWithEmailAndPassword(email, password);
   };
   return (
     <div>
@@ -35,7 +36,7 @@ const Login = () => {
             <div className="signup-blur px-5 py-5">
               <div>
                 <h2 className="text-center">Log In</h2>
-                <form className="">
+                <form onSubmit={login} className="">
                   <br />
                   <input
                     onChange={(e) => setEmail(e.target.value)}
@@ -51,12 +52,14 @@ const Login = () => {
                     placeholder="Password"
                   />
                   <br />
-                  <p>{error?"" : error.message}</p>
-                 <div className="d-flex justify-content-center">
-                 <button onClick={login} className="mt-2 px-3 border-0 fw-bold rounded bg-info">
-                 Login
-               </button>
-                 </div>
+                  <p>{error ? "" : error}</p>
+                  <div className="d-flex justify-content-center">
+                    <input
+                      value="Login"
+                      type="submit"
+                      className="mt-2 border-0 fw-bold rounded bg-info"
+                    ></input>
+                  </div>
                   <Link
                     to="/signup"
                     className="text-danger fw-bold d-block text-decoration-none mt-2 mb-3"

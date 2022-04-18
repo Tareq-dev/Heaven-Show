@@ -10,7 +10,8 @@ const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [createUserWithEmailAndPassword, loading, error] =
+  const [error, setError] = useState("");
+  const [createUserWithEmailAndPassword, user, loading] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
   const navigate = useNavigate();
 
@@ -18,9 +19,26 @@ const SignUp = () => {
     return <Loading />;
   }
 
-  const Register = () => {
-    createUserWithEmailAndPassword(email, password, confirmPassword);
-    navigate("/");
+  const Register = (event) => {
+    event.preventDefault();
+    if (password !== confirmPassword) {
+      setError("Your password did not match");
+      return;
+    }
+    if (password.length < 6) {
+      setError("Password must be at least 6 characters");
+    }
+    setEmail("");
+    setPassword("");
+    setConfirmPassword("");
+
+
+    if (user) {
+      navigate("/");
+    }
+    createUserWithEmailAndPassword(email, password).then(() => {
+      navigate("/");
+    });
   };
   return (
     <div>
@@ -30,7 +48,7 @@ const SignUp = () => {
           <div className="d-flex justify-content-center py-5">
             <div className="signup-blur px-5 py-5">
               <h2 className="text-center">Sign Up</h2>
-              <form>
+              <form onSubmit={Register}>
                 <input
                   className="mt-2 px-2 py-1 border"
                   type="text"
@@ -62,14 +80,13 @@ const SignUp = () => {
                   required
                 />
                 <br />
-                <p>{error.message}</p>
+                <p className="text-danger mt-3 mb-2">{error}</p>
                 <div className="d-flex justify-content-center">
-                  <button
-                    onClick={Register}
-                    className="mt-2 bg-info border-0 rounded-3 py-1 px-3 mb-2"
-                  >
-                    Register
-                  </button>
+                  <input
+                    value="Register"
+                    type="submit"
+                    className="mt-2 border-0 fw-bold rounded bg-info"
+                  ></input>
                 </div>
                 <Link
                   to="/login"
