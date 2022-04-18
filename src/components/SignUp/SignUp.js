@@ -6,8 +6,7 @@ import auth from "../firebase.init";
 import { Link, useNavigate } from "react-router-dom";
 import Loading from "../Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -23,7 +22,6 @@ const SignUp = () => {
 
   const Register = () => {
     createUserWithEmailAndPassword(email, password, confirmPassword);
-    toast("Thanks for registering");
     navigate("/");
   };
   return (
@@ -83,7 +81,7 @@ const SignUp = () => {
                 </Link>
                 <div className="d-flex justify-content-center">
                   <SocialLogin />
-                  <ToastContainer />
+             
                 </div>
               </form>
             </div>

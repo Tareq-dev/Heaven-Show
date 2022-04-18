@@ -4,8 +4,8 @@ import NavPage from "../NavPage/NavPage";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../firebase.init";
 import Loading from "../Loading/Loading";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import SocialLogin from "../SocialLogin/SocialLogin";
+
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -23,7 +23,7 @@ const Login = () => {
 
   const login = () => {
     signInWithEmailAndPassword(email, password);
-    toast('Thanks for signing in')
+   
     navigate(from, { replace: true });
   };
   return (
@@ -61,7 +61,7 @@ const Login = () => {
                   >
                     Don't have an account?
                   </Link>
-                  <ToastContainer />
+                  <SocialLogin />
                 </form>
               </div>
             </div>
