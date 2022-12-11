@@ -1,0 +1,24 @@
+.card-component {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+.card-shadow:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-bg:hover {
+  background-color: skyblue !important;
+}
+
+@media only screen and (max-width: 480px) {
+  .card-component {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+  }
+  .service-content h2,
+  p {
+    margin-bottom: 10px;
+  }
+}
